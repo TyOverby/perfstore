@@ -1,0 +1,36 @@
+{
+	"version": "0.1.0",
+	"command": ".\\node_modules\\.bin\\webpack.cmd",
+	"isShellCommand": true,
+	"args": [ ],
+    "options": {
+        "cwd": "${workspaceRoot}\\client"
+    },
+	"echoCommand": true,
+	"tasks": [
+		{
+			"args": [
+				"-d" 
+			],
+			"suppressTaskName": true,
+			"taskName": "client dev",
+			"isBuildCommand": true
+		},
+		{
+			"args": [
+				"-w" 
+			],
+			"suppressTaskName": true,
+			"taskName": "client watch",
+			"isBuildCommand": true
+		},
+		{
+			"args": [
+				"-p"
+			],
+			"suppressTaskName": true,
+			"taskName": "client dist",
+			"isBuildCommand": false
+		}
+	]
+}

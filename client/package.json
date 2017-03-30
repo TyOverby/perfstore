@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-build": "webpack -d --display-modules --progress",
+    "dist-build": "webpack -p --display-modules --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "source-map-loader": "^0.1.6",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  }
+}
