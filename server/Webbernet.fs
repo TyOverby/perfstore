@@ -12,9 +12,10 @@ open Suave.Files
 open Suave.RequestErrors
 open Suave.Logging
 open Suave.Utils
+open System
+open Types
 
 module Webbernet = 
-    open System
 
     type UploadSchema = JsonProvider<"../json_schemas/benchview_upload.json", true>
 
@@ -25,7 +26,7 @@ module Webbernet =
         dir |> IO.Path.GetFullPath
 
 
-    let foo (x: HttpContext) =
+    let processUpload (x: HttpContext) =
         let json = match x.request.form.Head with
                     | (k, Some(v)) -> k // TODO do something with this
                     | (k, None) -> k
@@ -33,6 +34,14 @@ module Webbernet =
             try 
                 let uploadData = UploadSchema.Parse(json);
                 printfn "%s" (uploadData.ToString())
+                let onlyRun = (Seq.first uploadData.Runs).Value
+                let scenarios = [
+                    for test in onlyRun.Tests -> 
+                        {
+                            Name = test.Name;
+                            Metrics = []
+                        }
+                ]
                 uploadData 
             with e -> failwith (e.ToString())
             
@@ -45,7 +54,7 @@ module Webbernet =
 
     let app =
         POST >=> choose [
-             path "/upload" >=> foo
+             path "/upload" >=> processUpload
         ]
 
     let start = fun() -> startWebServer defaultConfig app

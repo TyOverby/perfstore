@@ -1,14 +1,16 @@
 ﻿module Types
 
 open FSharp.Data.Sql
-open System.Collections.Generic
 open System.Linq
 open System
 
 [<Measure>] type Bytes
 [<Measure>] type MilliSeconds
 [<Measure>] type Count
-type Metric<'unit> =  {Name:string;Value:'unit}
+type Metric<'unit> =  {
+    Name:string;
+    Value:'unit
+}
 type BytesAllocated =  Metric<int<Bytes>>
 type ElapsedTime =  Metric<int<MilliSeconds>>
 type Summation =  Metric<int<Count>>
@@ -16,7 +18,13 @@ type PerfUnits =
     | BytesAllocated  of BytesAllocated
     | ElapsedTime of ElapsedTime
     | Summation of Summation
-type Scenario = {Name:string; Metrics:List<PerfUnits>}
+type Scenario = {
+    Name:string; 
+    Metrics:List<PerfUnits>
+}
+type Run = {
+    Scenarios:List<Scenario>
+}
 
 [<AutoOpen>]
 module Parsing =
@@ -72,7 +80,7 @@ let metricsForRun runId =
     query {
         for scenario in perfData.Scenarios do
         where (scenario.RunId = runId)
-        let metrics = (metricsForScenario scenario.ScenarioId).Where(fun x -> x.  IsSome).Select(fun x -> x.Value).ToList()
+        let metrics = (metricsForScenario scenario.ScenarioId).Where(fun x -> x.  IsSome).Select(fun x -> x.Value) |> List.ofSeq
         let scenarioType = {Name = scenario.ScenarioName; Metrics = metrics}
         select (scenarioType)
     }
