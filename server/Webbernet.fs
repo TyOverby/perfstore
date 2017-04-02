@@ -39,18 +39,24 @@ module Webbernet =
                     for test in onlyRun.Tests -> 
                         {
                             Name = test.Name;
-                            Metrics = []
+                            Metrics = [
+                                for result in test.Results -> 
+                                [
+                                    for value in result.Values -> 
+                                    PerfUnits.Generic( {
+                                        Name = result.Metric.Name;
+                                        Value = value.ToString()
+                                    })
+                                ]
+                            ] |> Seq.concat |> List.ofSeq
                         }
                 ]
+                printfn "%s" (scenarios.ToString())
                 uploadData 
             with e -> failwith (e.ToString())
-            
-        
+
 
         OK (object.ToString()) x
-
-        
-       
 
     let app =
         POST >=> choose [

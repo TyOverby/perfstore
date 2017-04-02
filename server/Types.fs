@@ -9,15 +9,17 @@ open System
 [<Measure>] type Count
 type Metric<'unit> =  {
     Name:string;
-    Value:'unit
+    Value: 'unit
 }
 type BytesAllocated =  Metric<int<Bytes>>
 type ElapsedTime =  Metric<int<MilliSeconds>>
 type Summation =  Metric<int<Count>>
+type Generic = Metric<string>
 type PerfUnits =
     | BytesAllocated  of BytesAllocated
     | ElapsedTime of ElapsedTime
     | Summation of Summation
+    | Generic of Generic
 type Scenario = {
     Name:string; 
     Metrics:List<PerfUnits>
@@ -39,7 +41,7 @@ module Parsing =
         
 
 let [<Literal>] connectionString = 
-    "Server=tcp:perfstore.database.windows.net,1433;Initial Catalog=perfstore;Persist Security Info=False;User ID=roslyn;Password=originalcharacterdonotsteal1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    "Server=tcp:perfstore.database.windows.net,1433;Initial Catalog=perfstore;Persist Security Info=False;User ID=***;Password=***;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 
 type sql = SqlDataProvider<
               ConnectionString = connectionString,
