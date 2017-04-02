@@ -1,0 +1,2716 @@
+{
+  "created": "2017-04-01T23:59:28Z",
+  "cuid": "cj0zx6l050000qspu9m5zp0bv",
+  "description": null,
+  "email": "dotnet-bot@microsoft.com",
+  "name": "roslyn rolling master 853b87b8447121e9a65c4a9ef8a57a0483d7baff",
+  "runs": [
+    {
+      "architecture": "amd64",
+      "build": {
+        "branch": "master",
+        "number": "853b87b8447121e9a65c4a9ef8a57a0483d7baff",
+        "repository": "https:\/\/github.com\/dotnet\/roslyn",
+        "sourceTimestamp": "2017-04-01T23:44:56Z",
+        "type": "rolling"
+      },
+      "configuration": {
+        "displayName": "Release",
+        "properties": {
+          "configuration": "Release"
+        }
+      },
+      "group": "roslyn",
+      "machine": {
+        "architecture": "AMD64",
+        "cores": 4,
+        "manufacturer": "GenuineIntel",
+        "name": "ml-perf-003",
+        "physicalMemory": 16264.59765625,
+        "threads": 8
+      },
+      "machinePool": "ml-perf",
+      "os": {
+        "architecture": "AMD64",
+        "edition": "Microsoft Windows 10 Pro",
+        "name": "Windows",
+        "version": "10.0.14393"
+      },
+      "tests": [
+        {
+          "name": "csharp CSharpCompiler.rsp",
+          "results": [
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStartTime",
+                "unit": "ms"
+              },
+              "values": [
+                437.8816,
+                417.0843,
+                395.1254
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStopTime",
+                "unit": "ms"
+              },
+              "values": [
+                7553.0181,
+                7455.7941,
+                7465.1927
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Duration_TotalElapsedTime",
+                "unit": "ms"
+              },
+              "values": [
+                7115.1365,
+                7038.7097,
+                7070.0673
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                6626,
+                6628,
+                6627
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1143,
+                1061,
+                1062
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                81844695,
+                81881559,
+                81848791
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                56887557,
+                56458532,
+                56462628
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                904,
+                904,
+                904
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1557,
+                1559,
+                1557
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1557,
+                1559,
+                1557
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                20157113,
+                20165305,
+                20157113
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                20157113,
+                20165305,
+                20157113
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                36864,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0.6427,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                1648405040,
+                1640882664,
+                1655523624
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                147956696,
+                145348488,
+                145996680
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                1648405040,
+                1640882664,
+                1655523624
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                1111058,
+                1111058,
+                1110338
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                360540,
+                378597,
+                381914
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_Exceptions_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_csc",
+                "unit": "Count"
+              },
+              "values": [
+                14516,
+                14516,
+                14513
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                4959,
+                5039,
+                5050
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                7174.0191,
+                7005.7041,
+                6867.9952
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                1926.8198,
+                2058.8896,
+                2012.2447
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_SuspendTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                471.8475,
+                393.6796,
+                553.1374
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                34774,
+                34403,
+                35206
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                3618,
+                3509,
+                3490
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Total_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_TotalMinusManaged_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Delta_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayCount_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "tests": [
+            
+          ]
+        },
+        {
+          "name": "csharp CSharpCompilerNoAnalyzer.rsp",
+          "results": [
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStartTime",
+                "unit": "ms"
+              },
+              "values": [
+                437.61,
+                417.6883,
+                428.4568
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStopTime",
+                "unit": "ms"
+              },
+              "values": [
+                6189.4789,
+                6155.317,
+                6186.4378
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Duration_TotalElapsedTime",
+                "unit": "ms"
+              },
+              "values": [
+                5751.8689,
+                5737.6288,
+                5757.9811
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                6223,
+                6224,
+                6225
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1054,
+                968,
+                1123
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                80184352,
+                80188448,
+                80204832
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                56433553,
+                56287147,
+                56777435
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                899,
+                899,
+                899
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1543,
+                1546,
+                1549
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1543,
+                1546,
+                1549
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                20099769,
+                20112097,
+                20152961
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                20099769,
+                20112097,
+                20152961
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                16384
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0.235
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                913264576,
+                906607432,
+                900139680
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                154385336,
+                160357960,
+                161618872
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                913264576,
+                906607432,
+                900139680
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                999252,
+                999252,
+                999919
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                404806,
+                404782,
+                394142
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_Exceptions_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_csc",
+                "unit": "Count"
+              },
+              "values": [
+                13043,
+                13043,
+                13046
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                5370,
+                5343,
+                5271
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                6176.2537,
+                6208.912,
+                6050.5029
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                2008.4657,
+                1968.4201,
+                1939.9747
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_SuspendTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                375.4585,
+                351.4874,
+                367.7905
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                22697,
+                22680,
+                22762
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                3550,
+                3658,
+                3625
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Total_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_TotalMinusManaged_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Delta_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayCount_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "tests": [
+            
+          ]
+        },
+        {
+          "name": "csharp CSharpCompilerNoAnalyzerNoDeterminism.rsp",
+          "results": [
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStartTime",
+                "unit": "ms"
+              },
+              "values": [
+                421.119,
+                416.5164,
+                423.3837
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStopTime",
+                "unit": "ms"
+              },
+              "values": [
+                6120.0669,
+                6094.7665,
+                6086.2671
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Duration_TotalElapsedTime",
+                "unit": "ms"
+              },
+              "values": [
+                5698.9479,
+                5678.2501,
+                5662.8835
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                6223,
+                6222,
+                6223
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1174,
+                1054,
+                1055
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                80184352,
+                80151584,
+                80155680
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                56934304,
+                56401101,
+                56405197
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                899,
+                899,
+                899
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1650,
+                1653,
+                1647
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1650,
+                1653,
+                1647
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                20525065,
+                20566469,
+                20512777
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                20525065,
+                20566469,
+                20512777
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                3,
+                3,
+                3
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                32768,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0.2957,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                908052672,
+                907583344,
+                913958200
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                159954080,
+                150727032,
+                158442816
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                908052672,
+                907583344,
+                913958200
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                999593,
+                999593,
+                1000927
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                396615,
+                395224,
+                390834
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_Exceptions_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_csc",
+                "unit": "Count"
+              },
+              "values": [
+                13034,
+                13034,
+                13040
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                5322,
+                5219,
+                5200
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                5931.9041,
+                5909.1799,
+                6213.4837
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                1974.1089,
+                1927.2393,
+                1936.156
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_SuspendTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                362.133,
+                364.8447,
+                348.2447
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                22823,
+                22990,
+                22631
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                3509,
+                3432,
+                3584
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Total_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_TotalMinusManaged_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Delta_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayCount_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "tests": [
+            
+          ]
+        },
+        {
+          "name": "hello world",
+          "results": [
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStartTime",
+                "unit": "ms"
+              },
+              "values": [
+                419.7906,
+                435.3847,
+                415.481
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Diagnostics_ScenarioStopTime",
+                "unit": "ms"
+              },
+              "values": [
+                2418.6567,
+                2444.1872,
+                2419.2498
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "Duration_TotalElapsedTime",
+                "unit": "ms"
+              },
+              "values": [
+                1998.866,
+                2008.8025,
+                2003.7688
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                115,
+                115,
+                115
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReads_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                115,
+                115,
+                115
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                53159017,
+                53159017,
+                53159017
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                53159017,
+                53159017,
+                53159017
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileReadDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                80,
+                80,
+                80
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWrites_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                3584,
+                3584,
+                3584
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteBytes_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                3584,
+                3584,
+                3584
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_FileWriteDistinctFiles_csc",
+                "unit": "Count"
+              },
+              "values": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWrites_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskWriteTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReads_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadBytes_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "IO_DiskReadTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                8850536,
+                8869008,
+                8762880
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                7888584,
+                7902128,
+                7795760
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesAllocated_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                8850536,
+                8869008,
+                8762880
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                410289,
+                410289,
+                410289
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_BytesJitted_MainThread_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                315607,
+                315607,
+                315607
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_Exceptions_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_csc",
+                "unit": "Count"
+              },
+              "values": [
+                4619,
+                4619,
+                4619
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodsJitted_MainThread_csc",
+                "unit": "Count"
+              },
+              "values": [
+                3475,
+                3475,
+                3475
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                1979.8824,
+                1988.8853,
+                1984.0295
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_MethodJitTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                1486.4395,
+                1493.9879,
+                1499.7278
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CLR_SuspendTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0.9224,
+                0.8942,
+                1.2932
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                2005,
+                2017,
+                2006
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "CPU_SampledTime_MainThread_csc",
+                "unit": "ms"
+              },
+              "values": [
+                1495,
+                1504,
+                1509
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Total_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Total_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_TotalMinusManaged_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_FileBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_DynamicBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImageBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_MappedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ShareableBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ManagedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_NativeBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_WastedBytes_Delta_csc",
+                "unit": "Bytes"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "VM_ImagesInMemory_Delta_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayTime_csc",
+                "unit": "ms"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "metric": {
+                "greaterTheBetter": false,
+                "name": "UI_DelayCount_csc",
+                "unit": "Count"
+              },
+              "values": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "tests": [
+            
+          ]
+        }
+      ],
+      "type": "rolling"
+    }
+  ]
+}
