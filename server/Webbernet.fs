@@ -22,11 +22,15 @@ module Webbernet =
                     | None -> Environment.CurrentDirectory
         dir |> IO.Path.GetFullPath
 
-    let app = choose [
-            //path "/websocket" >=> handShake echo
-        GET >=> choose [
-            Files.browse staticFiles
+
+    let foo (x: HttpContext) =
+        match x.request.form.Head with
+            | (k, Some(v)) -> OK k x
+            | (k, None) -> OK k x
+
+    let app =
+        POST >=> choose [
+             path "/upload" >=> foo
         ]
-    ]
 
     let start = fun() -> startWebServer defaultConfig app
