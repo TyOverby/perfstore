@@ -20,7 +20,7 @@ module Program =
         
 
     let [<Literal>] connectionString = 
-        "Server=tcp:perfstore.database.windows.net,1433;Initial Catalog=perfstore;Persist Security Info=False;User ID=***;Password=****;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+        "Server=tcp:perfstore.database.windows.net,1433;Initial Catalog=perfstore;Persist Security Info=False;User ID=roslyn;Password=originalcharacterdonotsteal1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 
     type sql = SqlDataProvider<
                   ConnectionString = connectionString,

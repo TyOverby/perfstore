@@ -16,6 +16,8 @@ open Suave.Utils
 module Webbernet = 
     open System
 
+    type UploadSchema = JsonProvider<"../json_schemas/benchview_upload.json", true>
+
     let staticFiles =
         let dir = match Seq.tryItem 1 (Environment.GetCommandLineArgs()) with
                     | Some(x) -> x 
@@ -24,9 +26,22 @@ module Webbernet =
 
 
     let foo (x: HttpContext) =
-        match x.request.form.Head with
-            | (k, Some(v)) -> OK k x
-            | (k, None) -> OK k x
+        let json = match x.request.form.Head with
+                    | (k, Some(v)) -> k // TODO do something with this
+                    | (k, None) -> k
+        let object =
+            try 
+                let uploadData = UploadSchema.Parse(json);
+                printfn "%s" (uploadData.ToString())
+                uploadData 
+            with e -> failwith (e.ToString())
+            
+        
+
+        OK (object.ToString()) x
+
+        
+       
 
     let app =
         POST >=> choose [
